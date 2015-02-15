@@ -36,5 +36,11 @@ gcloud preview container pods create --config-file zs-pod.json
 
 gcloud compute firewall-rules create zs-10081 --allow tcp:10081 --target-tags k8s-cluster4-node
 
+
+#Access
+To access the containers we must find the external IP that was assigned to them. run:
+
+gcloud compute forwarding-rules list
+
 for cleanup run "cleanup.sh".
 
