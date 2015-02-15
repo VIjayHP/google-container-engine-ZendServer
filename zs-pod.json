@@ -8,7 +8,7 @@
       "id": "zs",
       "containers": [{
         "name": "zs",
-        "image": "zend/zs8prealpha",
+        "image": "zend/php-zendserver",
         "env": [
                       {
                         "name": "ZS_ADMIN_PASSWORD",
