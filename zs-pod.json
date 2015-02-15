@@ -1,0 +1,30 @@
+{
+  "id": "zs",
+  "kind": "Pod",
+  "apiVersion": "v1beta1",
+  "desiredState": {
+    "manifest": {
+      "version": "v1beta1",
+      "id": "zs",
+      "containers": [{
+        "name": "zs",
+        "image": "zend/zs8prealpha",
+        "env": [
+                      {
+                        "name": "ZS_ADMIN_PASSWORD",
+                        "value": "123456"
+                      },
+                      {
+                        "name": "MYSQL_ROOT_PASSWORD",
+                        "value": "123456"
+                      }
+		],
+        "cpu": 100,
+        "ports": [{ "name": "zs", "containerPort": 80 }]
+      }]
+    }
+  },
+  "labels": {
+    "name": "frontend"
+  }
+}

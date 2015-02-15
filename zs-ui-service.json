@@ -1,0 +1,14 @@
+{
+  "id": "frontend-zs",
+  "kind": "Service",
+  "apiVersion": "v1beta1",
+  "port": 10081,
+  "containerPort": 10081,
+  "selector": {
+    "name": "frontend"
+  },
+  "createExternalLoadBalancer": true,
+  "labels": {
+    "name": "frontend-zs"
+  }
+}
